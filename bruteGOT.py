@@ -31,7 +31,7 @@ def searchOnline(info):
     else:
         return 0
     
-def burstGOT(raw_list):
+def bruteGOT(raw_list):
     info_list=enum_info(raw_list)
     for info in info_list:
         if searchOnline(info)==1:
@@ -42,7 +42,7 @@ def main():
     raw_list=(['printf','gets'],
                ['d80','800'] )
     
-    result=burstGOT(raw_list)
+    result=bruteGOT(raw_list)
     if result is not False:
         print 'Found:',result
     else:
