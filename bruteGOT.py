@@ -26,7 +26,6 @@ def searchOnline(info):
     res = urllib2.urlopen(req)
     res = res.read()
     if 'Matches' in res:
-        print res
         return 1
     else:
         return 0
